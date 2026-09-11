@@ -1,0 +1,11 @@
+# 依赖
+node_modules/
+
+# 构建产物（由 prepare / npm run build 生成）
+lib/
+
+# 日志与编辑器
+*.log
+.DS_Store
+.idea/
+.vscode/

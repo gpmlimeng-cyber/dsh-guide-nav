@@ -1,0 +1,10 @@
+# dsh-guide-nav 的 bundle 层：安装进 profile 后由 dsh 加载。
+# HOST 半边只提供"技能目录"这一条数据通路；UI 全部在 client 半边。
+- insert:
+    - id: dsh-guide-nav
+      name: dsh-guide-nav
+      config:
+        # 导航条最多显示多少个技能胶囊（超出截断，避免撑破输入区）。
+        maxSkills: 12
+        # 是否在非空会话也显示（默认 false：只在空会话显示）。
+        showOnActiveSession: false
