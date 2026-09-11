@@ -19,6 +19,7 @@ dsh-guide-nav/
 ├── cordis.patch.yml      # bundle 配置层：插入插件行
 ├── README.md             # 英文自述
 ├── README.zh.md          # 中文自述（本文件）
+├── docs/                 # 设计与开发文档（见 docs/README.md）
 └── src/
     ├── index.ts          # HOST 半边：GuideNavService（@Remote 暴露技能目录）
     └── client/           # 浏览器半边
@@ -155,6 +156,14 @@ npm run typecheck
 - **git**：`dsh plugin --profile web add github:you/dsh-guide-nav`（配合上面的 `allowBuilds`）
 
 ## 相关文档
+
+**本仓库内**：
+
+- 设计依据与取舍：[docs/design.zh.md](docs/design.zh.md)
+- 槽位选址与实测证据：[docs/slot-survey.zh.md](docs/slot-survey.zh.md)
+- 开发备注（四个坑与构建要点）：[docs/development.zh.md](docs/development.zh.md)
+
+**官方文档**：
 
 - 插件开发入门：[basic/index.zh.md](https://github.com/deepseek-ai/deepseek-harness/blob/main/docs/user/develop/basic/index.zh.md)
 - 插件配置：[basic/config.zh.md](https://github.com/deepseek-ai/deepseek-harness/blob/main/docs/user/develop/basic/config.zh.md)

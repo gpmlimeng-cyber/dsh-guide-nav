@@ -19,6 +19,7 @@ dsh-guide-nav/
 ├── cordis.patch.yml      # bundle config layer: inserts the plugin row
 ├── README.md             # English README (this file)
 ├── README.zh.md          # Chinese README
+├── docs/                 # design and development docs (see docs/README.md)
 └── src/
     ├── index.ts          # HOST half: GuideNavService (@Remote exposes the catalog)
     └── client/           # browser half
@@ -155,6 +156,16 @@ One build-side trap: `@deepseek-ai/*` dependencies must stay **external** (see `
 - **git**: `dsh plugin --profile web add github:you/dsh-guide-nav` (with the `allowBuilds` entry above)
 
 ## See also
+
+**In this repository**:
+
+- Design rationale and trade-offs: [docs/design.zh.md](docs/design.zh.md)
+- Slot survey and measured evidence: [docs/slot-survey.zh.md](docs/slot-survey.zh.md)
+- Development notes (four traps, build requirements): [docs/development.zh.md](docs/development.zh.md)
+
+> The in-repo docs are currently Chinese-only.
+
+**Upstream**:
 
 - Plugin development basics: [basic/index.md](https://github.com/deepseek-ai/deepseek-harness/blob/main/docs/user/develop/basic/index.md)
 - Plugin configuration: [basic/config.md](https://github.com/deepseek-ai/deepseek-harness/blob/main/docs/user/develop/basic/config.md)
